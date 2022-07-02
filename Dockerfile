@@ -1,3 +1,4 @@
 FROM linuxserver/sabnzbd
 
-RUN apk add --no-cache wget ffmpeg
+RUN apk add --update --no-cache wget ffmpeg docker openrc
+RUN rc-update add docker boot
